@@ -1,4 +1,4 @@
-#at first install image_slicer in windowsby writting "pip install image_slicer"
+#at first install image_slicer in windows writting "pip install image_slicer"
 
 
 import image_slicer
