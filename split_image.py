@@ -1,3 +1,5 @@
+#at first install image_slicer in windowsby writting "pip install image_slicer"
+
 
 import image_slicer
 import os
