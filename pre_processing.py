@@ -21,6 +21,8 @@ print("done loading")
 
 
 x = []
+y = []
+
 folder = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10.oo', '11.aa', '12.e_short', '13.e_long', '14.u_short', '15.u_long', '16.rii', '17.a', '18.oi', '19.o', '20.ou']
 
 
@@ -31,6 +33,7 @@ for i in folder:
 		img = cv2.imread('.\\'+i+'\\'+j, 0)
 		img = cv2.resize(img, (32, 32))
 		x.append(img)
+		y.append(i)
 
 	print('done', i)
 	winsound.Beep(2500, 1000)
@@ -58,6 +61,7 @@ print('done', folder)
 
 
 x = np.array(x)
+y = np.array(y)
 
 
 
@@ -65,6 +69,7 @@ x = np.array(x)
 
 
 np.save('all_x.npy', x)
+np.save('all_y.npy', y)
 
 
 
@@ -72,3 +77,4 @@ np.save('all_x.npy', x)
 
 
 print(x.shape)
+print(y.shape)
